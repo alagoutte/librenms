@@ -13,3 +13,9 @@ modules:
           descr: 'TCP Connection'
           index: TcpConn.{{ $index }}
           group: Sessions
+        -
+          oid: STORMSHIELD-ASQ-STATS-MIB::snsASQStatsStatefulUdpConn
+          num_oid: '.1.3.6.1.4.1.11256.1.12.1.33.{{ $index }}'
+          descr: 'UDP Connection'
+          index: UDPConn.{{ $index }}
+          group: Sessions
